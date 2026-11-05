@@ -23,7 +23,8 @@ COLS = ["P-PDG", "P-TPT", "T-TPT", "P-MON-CKP", "T-JUS-CKP"]
 
 def load(root: str, cache: str | None):
     if cache and os.path.exists(cache):
-        return pickle.load(open(cache, "rb"))
+        with open(cache, "rb") as fh:
+            return pickle.load(fh)
     import pandas as pd
 
     out = {}
@@ -35,7 +36,8 @@ def load(root: str, cache: str | None):
                 d["class"].resample("1min").max().to_numpy(float),
             )
     if cache:
-        pickle.dump(out, open(cache, "wb"))
+        with open(cache, "wb") as fh:
+            pickle.dump(out, fh)
     return out
 
 
