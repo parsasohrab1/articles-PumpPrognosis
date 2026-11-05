@@ -1,0 +1,119 @@
+{
+ "note": "real 3W WELL instances; 1-min grid; baseline = first 60 min of each instance",
+ "n_normal_calibration": 121,
+ "n_normal_test": 416,
+ "n_scaling_total": 36,
+ "n_scaling_evaluable": 36,
+ "scaling_reached_fault_label": 5,
+ "rules": {
+  "conformal_alpha_0.2": {
+   "threshold_z": 2.573857460580164,
+   "false_alarm_rate_normal_test": 0.7572115384615384,
+   "alert_before_onset_rate": 0.6666666666666666,
+   "missed_rate": 0.0,
+   "detected_after_onset_n": 12,
+   "median_delay_min_after_onset": 475.5,
+   "q90_delay_min": 1311.4
+  },
+  "conformal_alpha_0.1": {
+   "threshold_z": 4.456020957923987,
+   "false_alarm_rate_normal_test": 0.5625,
+   "alert_before_onset_rate": 0.3888888888888889,
+   "missed_rate": 0.08333333333333333,
+   "detected_after_onset_n": 19,
+   "median_delay_min_after_onset": 687.0,
+   "q90_delay_min": 2667.2
+  },
+  "conformal_alpha_0.05": {
+   "threshold_z": 5.39853831944682,
+   "false_alarm_rate_normal_test": 0.5120192307692307,
+   "alert_before_onset_rate": 0.3055555555555556,
+   "missed_rate": 0.1388888888888889,
+   "detected_after_onset_n": 20,
+   "median_delay_min_after_onset": 543.5,
+   "q90_delay_min": 2562.8000000000015
+  },
+  "fixed_z_3": {
+   "threshold_z": 3.0,
+   "false_alarm_rate_normal_test": 0.7067307692307693,
+   "alert_before_onset_rate": 0.5277777777777778,
+   "missed_rate": 0.027777777777777776,
+   "detected_after_onset_n": 16,
+   "median_delay_min_after_onset": 267.5,
+   "q90_delay_min": 1681.5
+  },
+  "fixed_z_5": {
+   "threshold_z": 5.0,
+   "false_alarm_rate_normal_test": 0.5288461538461539,
+   "alert_before_onset_rate": 0.3333333333333333,
+   "missed_rate": 0.1388888888888889,
+   "detected_after_onset_n": 19,
+   "median_delay_min_after_onset": 542.0,
+   "q90_delay_min": 1769.5999999999992
+  },
+  "fixed_z_10": {
+   "threshold_z": 10.0,
+   "false_alarm_rate_normal_test": 0.3173076923076923,
+   "alert_before_onset_rate": 0.1111111111111111,
+   "missed_rate": 0.3333333333333333,
+   "detected_after_onset_n": 20,
+   "median_delay_min_after_onset": 902.0,
+   "q90_delay_min": 3870.0
+  },
+  "fixed_z_20": {
+   "threshold_z": 20.0,
+   "false_alarm_rate_normal_test": 0.14423076923076922,
+   "alert_before_onset_rate": 0.027777777777777776,
+   "missed_rate": 0.6388888888888888,
+   "detected_after_onset_n": 12,
+   "median_delay_min_after_onset": 2817.0,
+   "q90_delay_min": 5695.1
+  }
+ },
+ "pooled_random_split_alpha_0.1": {
+  "false_alarm_mean": 0.0958921933085502,
+  "false_alarm_sd": 0.02650194581935642
+ },
+ "median_max_index_by_well": {
+  "WELL-00001": 2.968342092343238,
+  "WELL-00002": 10.3886463849683,
+  "WELL-00003": 0.9089315664589952,
+  "WELL-00004": 0.6274652846684851,
+  "WELL-00005": 1.9671924222238435,
+  "WELL-00006": 2.7415387642245856,
+  "WELL-00007": 1.5864694039199376,
+  "WELL-00019": 529.8051592241782
+ },
+ "scaling_wells_with_normal_instances": [
+  "WELL-00001",
+  "WELL-00006"
+ ],
+ "scaling_wells_without_normal_instances": [
+  "WELL-00021",
+  "WELL-00022",
+  "WELL-00023",
+  "WELL-00024"
+ ],
+ "per_well_calibration_alpha_0.1": {
+  "WELL-00001": {
+   "n_cal": 46,
+   "n_test_normal": 47,
+   "n_scaling": 1,
+   "threshold_z": 5.892040231429782,
+   "false_alarm_rate_normal_test": 0.14893617021276595,
+   "scaling_alert_before_onset": 0,
+   "scaling_missed": 0
+  },
+  "WELL-00006": {
+   "n_cal": 56,
+   "n_test_normal": 57,
+   "n_scaling": 2,
+   "threshold_z": 480.5555431633787,
+   "false_alarm_rate_normal_test": 0.03508771929824561,
+   "scaling_alert_before_onset": 0,
+   "scaling_missed": 2
+  }
+ },
+ "normal_test_exposure_min_median": 275.0,
+ "scaling_pre_onset_exposure_min_median": 363.5
+}

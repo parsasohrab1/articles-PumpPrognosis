@@ -7,6 +7,7 @@ health-index series. TRL 4 (laboratory validation on a **synthetic** twin only).
   interval, alert rules (RUL-based and fixed-threshold).
 - `research/run_study.py` – window selection, calibration and test on separate
   synthetic units, including two shifted wear conditions; writes `research/results.json`.
+- `research/run_3w.py` – real-data check on Petrobras 3W (pass the dataset path), writes `research/results_3w.json`.
 - `tests/` – unit tests (`pytest`).
 - `docs/` – BRS, SRS, TRL assessment.
 
@@ -14,5 +15,5 @@ health-index series. TRL 4 (laboratory validation on a **synthetic** twin only).
 pip install -e .[dev] && pytest && python research/run_study.py
 ```
 
-**Limitation:** all numbers come from a synthetic run-to-failure generator.
+**Limitation:** the RUL and alert numbers in `docs/TRL.md` main table are synthetic. A separate real-data check on Petrobras 3W (`research/run_3w.py`) tests only the health-index alert and is largely negative; 3W is not ESP data.
 No field pump data have been used; no claim about real equipment is made.
