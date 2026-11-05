@@ -1,0 +1,116 @@
+{
+  "note": "synthetic run-to-failure series; RUL evaluated 1 to 90 days before failure",
+  "window_selection_mae_days": {
+    "30": 95.99260280167626,
+    "60": 18.694653171082674,
+    "120": 16.384822228968698,
+    "240": 16.694936959665434
+  },
+  "conformal_half_width_log": 1.0548181347674594,
+  "n_calibration_units": 149,
+  "same_conditions": {
+    "n_units": 150,
+    "alert_gate_fraction": 0.7,
+    "rul_mae_days_exponential": 18.2220754849635,
+    "rul_mae_days_linear": 66.9141421054478,
+    "interval_coverage_target_0.90": 0.8975239616613419,
+    "alert_rul_conformal": {
+      "n": 150,
+      "no_alert": 0,
+      "early_false_alarm_rate": 0.16666666666666666,
+      "missed_rate": 0.006666666666666667,
+      "median_lead_days": 32.0
+    },
+    "alert_threshold_0.5": {
+      "n": 150,
+      "no_alert": 0,
+      "early_false_alarm_rate": 0.9866666666666667,
+      "missed_rate": 0.0,
+      "median_lead_days": 117.5
+    },
+    "alert_threshold_0.7": {
+      "n": 150,
+      "no_alert": 0,
+      "early_false_alarm_rate": 0.7733333333333333,
+      "missed_rate": 0.0,
+      "median_lead_days": 63.0
+    },
+    "alert_threshold_0.9": {
+      "n": 150,
+      "no_alert": 0,
+      "early_false_alarm_rate": 0.29333333333333333,
+      "missed_rate": 0.006666666666666667,
+      "median_lead_days": 34.0
+    }
+  },
+  "faster_wear_x1.5": {
+    "n_units": 150,
+    "alert_gate_fraction": 0.7,
+    "rul_mae_days_exponential": 14.875216579141771,
+    "rul_mae_days_linear": 108.30250628229298,
+    "interval_coverage_target_0.90": 0.9317057344472383,
+    "alert_rul_conformal": {
+      "n": 150,
+      "no_alert": 0,
+      "early_false_alarm_rate": 0.04,
+      "missed_rate": 0.013333333333333334,
+      "median_lead_days": 21.0
+    },
+    "alert_threshold_0.5": {
+      "n": 150,
+      "no_alert": 0,
+      "early_false_alarm_rate": 0.8866666666666667,
+      "missed_rate": 0.0,
+      "median_lead_days": 75.0
+    },
+    "alert_threshold_0.7": {
+      "n": 150,
+      "no_alert": 0,
+      "early_false_alarm_rate": 0.43333333333333335,
+      "missed_rate": 0.0,
+      "median_lead_days": 42.0
+    },
+    "alert_threshold_0.9": {
+      "n": 150,
+      "no_alert": 0,
+      "early_false_alarm_rate": 0.04,
+      "missed_rate": 0.06666666666666667,
+      "median_lead_days": 20.0
+    }
+  },
+  "slower_wear_x0.7": {
+    "n_units": 146,
+    "alert_gate_fraction": 0.7,
+    "rul_mae_days_exponential": 24.68718149972027,
+    "rul_mae_days_linear": 50.46681995677173,
+    "interval_coverage_target_0.90": 0.8471648833094616,
+    "alert_rul_conformal": {
+      "n": 146,
+      "no_alert": 0,
+      "early_false_alarm_rate": 0.3150684931506849,
+      "missed_rate": 0.0,
+      "median_lead_days": 38.0
+    },
+    "alert_threshold_0.5": {
+      "n": 146,
+      "no_alert": 0,
+      "early_false_alarm_rate": 1.0,
+      "missed_rate": 0.0,
+      "median_lead_days": 178.0
+    },
+    "alert_threshold_0.7": {
+      "n": 146,
+      "no_alert": 0,
+      "early_false_alarm_rate": 0.9794520547945206,
+      "missed_rate": 0.0,
+      "median_lead_days": 99.5
+    },
+    "alert_threshold_0.9": {
+      "n": 146,
+      "no_alert": 0,
+      "early_false_alarm_rate": 0.6164383561643836,
+      "missed_rate": 0.0,
+      "median_lead_days": 53.0
+    }
+  }
+}
